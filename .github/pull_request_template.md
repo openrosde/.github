@@ -1,5 +1,5 @@
 <!--
-Title: Conventional Commits, `type(scope): subject`, imperative and lowercase, with no trailing period.
+Title: Conventional Commits, `type(scope): subject`, imperative and lowercase, with no trailing period, and with no scope in the core apart from `chore(release): vX.Y.Z`.
 Cover each section when relevant, and delete the sections that do not apply.
 Use backticks for code identifiers, and no semicolons, en dashes, or em dashes.
 -->
@@ -26,4 +26,4 @@ Use backticks for code identifiers, and no semicolons, en dashes, or em dashes.
 
 ## Changelog
 
-<!-- The `CHANGELOG.md` subsection (`Added`, `Changed`, `Deprecated`, `Removed`, `Fixed`, or `Security`) and the one-line entry being added. -->
+<!-- The `CHANGELOG.md` subsection (`Added`, `Changed`, `Deprecated`, `Removed`, `Fixed`, or `Security`) and the one-line entry being added, or `None` in a repository that keeps no `CHANGELOG.md`. -->

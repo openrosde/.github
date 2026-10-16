@@ -12,6 +12,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/openrosde/openrosde/releases/latest"><img src="https://img.shields.io/github/v/release/openrosde/openrosde?label=release&color=4F46E5" alt="Latest release of OpenRoSDE"></a>
   <a href="https://doi.org/10.1080/01691864.2022.2068353"><img src="https://img.shields.io/badge/paper-10.1080%2F01691864.2022.2068353-4F46E5" alt="Paper DOI: 10.1080/01691864.2022.2068353"></a>
   <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/badge/license-Apache--2.0-2E5C8A" alt="License: Apache-2.0"></a>
   <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker-containerized-2496ED?logo=docker&logoColor=white" alt="Containerized with Docker"></a>
@@ -41,6 +42,7 @@ Its robot, simulator, visualization, and behavior interfaces are primarily imple
 - **Extensions**: each platform and each device lives in a repository of its own, public or private, which OpenRoSDE finds by name once it is cloned into `extensions/`.
 - **ROS 1 & ROS 2**: each platform declares the ROS it runs, ROS Noetic on Ubuntu 20.04 or ROS 2 Lyrical on Ubuntu 26.04, side by side.
 - **Robot models for any client**: `rosbridge` serves the robot description and every mesh as a GLB to web and Unity applications.
+- **One session per robot**: `RUN-TMUX-SESSION.bash` gathers the terminals of a robot in one `tmux` session, with the same standard tabs on every platform.
 - **A CI that never moves a robot**: every setup is built, then checked in a container disconnected from every network.
 
 ## 📦 Repositories
