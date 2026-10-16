@@ -14,10 +14,11 @@ This guide applies to every repository of [https://github.com/openrosde](https:/
 - Open an issue before starting non-trivial work, so the maintainers can give early feedback.
 - Report an issue of a platform or a device in its own repository, and an issue of the scripts, the images, or the CI in the core.
 - Write commit messages and pull request titles as [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
-- Submit changes through a pull request from a feature branch, into the branch that the guide of the repository names, which is `dev` for the core.
+- Submit changes through a pull request from a feature branch named `<type>/<slug>` after the Conventional Commit type, into the branch that the guide of the repository names, which is `dev` for the core and `main` for the website, the platforms, and the devices.
 - Describe the pull request with the sections of the template: Summary, Changes, Testing, Related, and Changelog.
+- Add a one-line entry under `## [Unreleased]` of `CHANGELOG.md` in a repository that keeps one, such as the core, and write `None` under Changelog in one that does not.
 - Use backticks for code identifiers, and no semicolons, en dashes, or em dashes, in issues and pull requests.
-- Report a security vulnerability privately, as [`SECURITY.md`](SECURITY.md) describes.
+- Report a security vulnerability privately, with **Report a vulnerability** in the **Security** tab of the repository, as [`SECURITY.md`](SECURITY.md) describes.
 
 Everyone who takes part in the project follows the [Code of Conduct](CODE_OF_CONDUCT.md).
 

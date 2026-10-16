@@ -6,8 +6,8 @@ This policy applies to every repository of [https://github.com/openrosde](https:
 
 Please report a vulnerability privately, and never in a public issue, pull request, or discussion.
 
-- Use the private vulnerability reporting of GitHub, with **Report a vulnerability** in the **Security** tab of the affected repository.
-- Write to `info@coarobo.com` if that button is missing, or if the vulnerability spans several repositories.
+- Use the private vulnerability reporting of GitHub, which every repository of the organization enables, with **Report a vulnerability** in the **Security** tab of the affected repository.
+- Write to `info@coarobo.com` if the vulnerability spans several repositories, or if you cannot use GitHub.
 
 Include the affected repository, the release tag or the commit, the platform or the setup, the steps to reproduce, and the impact you expect.
 Coarobo GK, which maintains OpenRoSDE, keeps the report private until a fix is available.
