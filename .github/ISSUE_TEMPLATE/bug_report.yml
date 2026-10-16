@@ -1,0 +1,86 @@
+name: Bug report
+description: Report a problem with OpenRoSDE, a platform, or a device.
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a problem.
+        Use a plain descriptive title, such as `Gripper does not respond on UR5e realworld bringup`, rather than a Conventional Commit.
+        Report a problem of a platform or a device in its own repository, and a security vulnerability privately, as https://github.com/openrosde/.github/blob/main/SECURITY.md describes.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happens, and what you expected to happen instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The commands you ran, in order, and where you ran them (on the host or in the container).
+      placeholder: |
+        1. bash ./SWITCH-ROBOT-PLATFORM.bash turtlebot3
+        2. bash ./BUILD-DOCKER-IMAGE.bash
+        3. bash ./RUN-DOCKER-CONTAINER.bash
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output of the failing command
+      description: Paste the output, with any password, token, or secret removed.
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform or setup
+      description: The value of `OPENROSDE_ROBOT_PLATFORM`, or of `OPENROSDE_ROBOT_SETUP` for a setup, with the active `OPENROSDE_ROBOT_EXTENSIONS`.
+      placeholder: turtlebot3
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Where the problem appears.
+      options:
+        - Gazebo simulation
+        - Real robot
+        - Both
+        - Neither (build or setup)
+    validations:
+      required: true
+  - type: input
+    id: host
+    attributes:
+      label: Host OS
+      description: The operating system of the Ubuntu development machine, native or on WSL 2.
+      placeholder: Ubuntu 24.04 LTS (native)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version of OpenRoSDE
+      description: The release tag or the commit of the core, such as the output of `git describe --tags --always`.
+    validations:
+      required: false
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU
+      description: The GPU and its driver, when the problem concerns 3D rendering.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else that helps, such as screenshots or the content of `.env.custom` with its secrets removed.
+    validations:
+      required: false

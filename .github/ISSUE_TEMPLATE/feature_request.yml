@@ -1,0 +1,57 @@
+name: Feature request
+description: Suggest an idea or a change for OpenRoSDE, a platform, or a device.
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting an improvement.
+        Open a feature request before starting non-trivial work, so the maintainers can give early feedback.
+        Use a plain descriptive title rather than a Conventional Commit.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: The part of OpenRoSDE that the request concerns.
+      options:
+        - Entry scripts and Docker images
+        - Workspaces and launch files
+        - New robot platform
+        - Existing platform or device
+        - Extensions and setups
+        - ROS 2
+        - Robot models
+        - CI
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem the change would solve, and for whom.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: The change you suggest, and how it would work.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: Other solutions or workarounds you considered, such as the user overlay or an extension.
+    validations:
+      required: false
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I would like to work on this change myself.
+          required: false
