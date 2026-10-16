@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://openrosde.org/">
+    <img src="assets/openrosde-logo.svg" alt="OpenRoSDE logo" width="96" height="96">
+  </a>
+</p>
+
 <h1 align="center">OpenRoSDE</h1>
 
 <p align="center">
